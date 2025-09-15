@@ -1,0 +1,134 @@
+[
+  {
+    "model": "course.course",
+    "pk": 1,
+    "fields": {
+      "title": "Python for Beginners",
+      "description": "Learn Python from scratch with hands-on examples."
+    }
+  },
+  {
+    "model": "course.course",
+    "pk": 2,
+    "fields": {
+      "title": "Web Development with Django",
+      "description": "Build modern web applications using Django framework."
+    }
+  },
+
+  {
+    "model": "course.module",
+    "pk": 1,
+    "fields": {
+      "course": 1,
+      "title": "Introduction to Python"
+    }
+  },
+  {
+    "model": "course.module",
+    "pk": 2,
+    "fields": {
+      "course": 1,
+      "title": "Control Structures"
+    }
+  },
+  {
+    "model": "course.module",
+    "pk": 3,
+    "fields": {
+      "course": 2,
+      "title": "Django Basics"
+    }
+  },
+  {
+    "model": "course.module",
+    "pk": 4,
+    "fields": {
+      "course": 2,
+      "title": "Django ORM & Models"
+    }
+  },
+
+  {
+    "model": "course.lesson",
+    "pk": 1,
+    "fields": {
+      "module": 1,
+      "title": "Variables and Data Types",
+      "content": "Learn how to declare variables and use Python's built-in data types."
+    }
+  },
+  {
+    "model": "course.lesson",
+    "pk": 2,
+    "fields": {
+      "module": 1,
+      "title": "Operators",
+      "content": "Arithmetic, logical, and comparison operators in Python."
+    }
+  },
+  {
+    "model": "course.lesson",
+    "pk": 3,
+    "fields": {
+      "module": 2,
+      "title": "If Statements",
+      "content": "Understand conditional execution in Python."
+    }
+  },
+  {
+    "model": "course.lesson",
+    "pk": 4,
+    "fields": {
+      "module": 2,
+      "title": "Loops",
+      "content": "For loops and while loops with practical examples."
+    }
+  },
+  {
+    "model": "course.lesson",
+    "pk": 5,
+    "fields": {
+      "module": 3,
+      "title": "Setting up Django",
+      "content": "Install Django, create a project, and run the development server."
+    }
+  },
+  {
+    "model": "course.lesson",
+    "pk": 6,
+    "fields": {
+      "module": 4,
+      "title": "Working with Models",
+      "content": "Define models, run migrations, and interact with the database."
+    }
+  },
+
+  {
+    "model": "course.instructor",
+    "pk": 1,
+    "fields": {
+      "name": "John Doe",
+      "bio": "Python developer and instructor.",
+      "courses": [1] 
+    }
+  },
+  {
+    "model": "course.instructor",
+    "pk": 2,
+    "fields": {
+      "name": "Jane Smith",
+      "bio": "Full-stack web developer specializing in Django.",
+      "courses": [2]
+    }
+  },
+  {
+    "model": "course.instructor",
+    "pk": 3,
+    "fields": {
+      "name": "Dr. Alan Turing",
+      "bio": "Computer scientist teaching Python and Django.",
+      "courses": [1, 2]
+    }
+  }
+]
